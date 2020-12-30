@@ -1,8 +1,8 @@
 CC := gcc
-EXERCISE := EXERCISE_1_3
+EXERCISE := EXERCISE_1_4
 
-build:
-	$(CC) -D $(EXERCISE) -o ./exercises.o exercises.c
+all:
+	$(CC) -D $(EXERCISE) -o ./exercises.o ./exercises.c
 	./exercises.o
 
 clean:
