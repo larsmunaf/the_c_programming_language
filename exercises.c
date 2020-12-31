@@ -50,6 +50,17 @@
     }
 #endif /* EXERCISE_1_4 */
 
+#ifdef EXERCISE_1_5
+    #include <stdio.h>
+    int print_temp_table_reverse()
+    {
+        int fahr;
+
+        for (fahr = 300; fahr >= 0; fahr = fahr - 20)
+            printf("%3d %6.1f\n", fahr, (5.0 / 9.0) * (fahr -32));
+    }
+#endif /* EXERCISE_1_5 */
+
 int main(int argc, char **argv)
 {
     #ifdef EXERCISE_1_3
@@ -59,4 +70,8 @@ int main(int argc, char **argv)
     #ifdef EXERCISE_1_4
         print_celsius_to_fahr_table();
     #endif /* EXERCISE_1_4 */
+
+    #ifdef EXERCISE_1_5
+        print_temp_table_reverse();
+    #endif /* EXERCISE_1_5 */
 }
